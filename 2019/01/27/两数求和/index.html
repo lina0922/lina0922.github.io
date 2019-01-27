@@ -170,7 +170,21 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
-      
+      <span>
+        var twoSum = function(nums, target) {
+
+          for (i=0; i < nums.length; i++) {
+              var item = nums[i];
+              for (j = i + 1; j < nums.length; j++) {
+                  var inItem = nums[j];
+                  if (item + inItem == target) {
+                      return [i,j];
+                  }
+              }
+          }
+      };
+      twoSum([2, 7, 11, 15],9);
+      </span>
         
       
 
@@ -186,21 +200,7 @@
                 <span class="tooltip-inner">
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
-                      <span>
-                        var twoSum = function(nums, target) {
-   
-                          for (i=0; i < nums.length; i++) {
-                              var item = nums[i];
-                              for (j = i + 1; j < nums.length; j++) {
-                                  var inItem = nums[j];
-                                  if (item + inItem == target) {
-                                      return [i,j];
-                                  }
-                              }
-                          }
-                      };
-                      twoSum([2, 7, 11, 15],9);
-                      </span>
+                      
                   </div>
                 </span>
               </span>
