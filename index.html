@@ -152,27 +152,30 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-1" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-LeetCode2" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/28/1/">1</a>
+      <a class="article-title" href="/2019/01/30/LeetCode2/">LeetCode2</a>
     </h1>
   
 
         
-        <a href="/2019/01/28/1/" class="archive-article-date">
-  	<time datetime="2019-01-28T07:06:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-28</time>
+        <a href="/2019/01/30/LeetCode2/" class="archive-article-date">
+  	<time datetime="2019-01-30T02:22:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="给定一个字符串，请你找出其中不含有重复字符的-最长子串-的长度。"><a href="#给定一个字符串，请你找出其中不含有重复字符的-最长子串-的长度。" class="headerlink" title="给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。"></a>给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。</h4><p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素</p>
+<p>示例:</p>
+<p>输入: “pwwkew”<br>输出: 3<br>解释: 因为无重复字符的最长子串是 “wke”，所以其长度为 3。<br>     请注意，你的答案必须是 子串 的长度，”pwke” 是一个子序列，不是子串。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var lengthOfLongestSubstring = <span class="keyword">function</span>(s) &#123;</span><br><span class="line">    var sArr = s.split(<span class="string">''</span>);</span><br><span class="line">    <span class="keyword">if</span> (s.length == 0) &#123;</span><br><span class="line">        <span class="built_in">return</span> 0;</span><br><span class="line">    &#125;</span><br><span class="line">    var resArr = [sArr[0]];</span><br><span class="line">    var res = 1;</span><br><span class="line">    <span class="keyword">for</span> (var i = 0; i &lt; s.length; i++) &#123;</span><br><span class="line">         var indexOf = resArr.indexOf(sArr[i]); </span><br><span class="line">            <span class="keyword">if</span> (indexOf &gt; -1) &#123;</span><br><span class="line">             resArr = resArr.splice(indexOf + 1);</span><br><span class="line">            &#125;</span><br><span class="line">            resArr.push(sArr[i]);</span><br><span class="line">            res = resArr.length &gt; res ? resArr.length : res;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> res;</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure></p>
+
       
 
       
@@ -184,7 +187,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/01/28/1/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/01/30/LeetCode2/">展开全文 >></a>
         </p>
       
 
